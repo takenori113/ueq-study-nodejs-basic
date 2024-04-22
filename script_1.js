@@ -5,7 +5,7 @@ export const getTotalMemoryInMB = () => {
 };
 
 const main = () => {
-  const totalMemoryInMB = getTotalMemoryInMB();
+  const totalMemoryInMB = Math.trunc(getTotalMemoryInMB());
   console.log(`Total memory: ${totalMemoryInMB} MB`);
 };
 
