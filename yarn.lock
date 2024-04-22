@@ -1776,9 +1776,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ueq-study-nodejs-basic-answer@workspace:.":
+"ueq-study-nodejs-basic@workspace:.":
   version: 0.0.0-use.local
-  resolution: "ueq-study-nodejs-basic-answer@workspace:."
+  resolution: "ueq-study-nodejs-basic@workspace:."
   dependencies:
     "@vitest/coverage-v8": "npm:^0.34.1"
     vitest: "npm:^0.34.1"

@@ -1,6 +1,9 @@
+import fs from 'fs';
 export const main = async () => {
-  const csvPath = "./seiseki.csv";
-  console.log("csvファイルの中身を出力");
+  const csvPath = './seiseki.csv';
+  fs.readFile(csvPath,'UTF-8',(error,date)=>{console.log(date);});
+  
+  
 };
 
 main();
