@@ -26,14 +26,14 @@ describe("Node.jsの基本問題2", () => {
     expect(spy).toHaveLastReturnedWith(answer);
   });
   test("csvの内容が変更されても結果が正しい", async () => {
-    await cp("./__test__/seiseki_other.csv", "./seiseki.csv", { force: true });
+    await cp("./__tests__/seiseki_other.csv", "./seiseki.csv", { force: true });
     const spy = vi
       .spyOn(global.console, "log")
       .mockImplementation((args) => args);
     await main2();
     const answer = await readFile("./seiseki.csv", "utf-8");
     expect(spy).toHaveLastReturnedWith(answer);
-    await cp("./__test__/seiseki.csv", "./seiseki.csv", { force: true });
+    await cp("./__tests__/seiseki.csv", "./seiseki.csv", { force: true });
   });
 });
 
